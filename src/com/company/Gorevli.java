@@ -1,7 +1,9 @@
 package com.company;
 
-public interface Gorevli {
-    public void checkIn();
+import java.util.ArrayList;
 
-    public void checkOut();
+public interface Gorevli {
+    public void checkIn(int odaNo,ArrayList<Konuk> konuklar);
+
+    public void checkOut(ArrayList<Konuk> konuklar);
 }

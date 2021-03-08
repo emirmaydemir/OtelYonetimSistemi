@@ -9,6 +9,7 @@ public class Konuk extends Odalar{
     private String tel;
     private int kalicanakGun;
     private int odaNo;
+    private int odenecekTutar;
     Scanner input=new Scanner(System.in);
 
     public Konuk(int odaNo,int kalicanakGun){
@@ -22,10 +23,18 @@ public class Konuk extends Odalar{
         this.tel=input.nextLine();
         this.odaNo=odaNo;
         this.kalicanakGun=kalicanakGun;
+        this.odenecekTutar=50;
     }
-    public Konuk(){
-
+    public Konuk(String ad,String soyAd,String TC,String tel,int kalicanakGun,int odaNo,int odenecekTutar){
+     this.ad=ad;
+     this.soyAd=soyAd;
+     this.TC=TC;
+     this.tel=tel;
+     this.kalicanakGun=kalicanakGun;
+     this.odaNo=odaNo;
+     this.odenecekTutar=odenecekTutar;
     }
+    public Konuk(){}
     public String getAd() {
         return ad;
     }
@@ -72,5 +81,13 @@ public class Konuk extends Odalar{
 
     public void setKalicanakGun(int kalicanakGun) {
         this.kalicanakGun = kalicanakGun;
+    }
+
+    public int getOdenecekTutar() {
+        return odenecekTutar;
+    }
+
+    public void setOdenecekTutar(int odenecekTutar) {
+        this.odenecekTutar = odenecekTutar;
     }
 }
